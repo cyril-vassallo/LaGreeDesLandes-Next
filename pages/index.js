@@ -1,6 +1,16 @@
-export default function Home () { 
-  return (
-   <h1>Welcome to Next js</h1>
-  );
+import Nav from "./../components/nav/Nav";
 
+export default function Home() {
+  return (
+    <>
+      <Nav/>
+      <main className="container-fluid">
+        {/* <Header>
+
+        </Header> */}
+
+      
+      </main>
+    </>
+  );
 }
