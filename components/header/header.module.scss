@@ -1,0 +1,35 @@
+.layer {
+  padding: 10%;
+  position: absolute;
+  img {
+    width: 100%;
+  }
+  p {
+    color: #7d92b2;
+    width: 100%;
+    font-size: 0.5rem;
+  }
+  button {
+    padding: 5px 10px 5px 10px;
+    background-color: #aa9c30;
+    border: 1px solid #7089b1;
+    color: #7089b1;
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .layer {
+    padding: 10%;
+
+    p {
+      margin-top: 40px;
+      font-size: 1rem;
+    }
+    button {
+      margin-top: 40px;
+      padding: 5px 25px 5px 25px;
+      font-size: 1rem;
+    }
+  }
+}

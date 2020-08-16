@@ -7,3 +7,17 @@ body {
   line-height: 1.6;
   font-size: 18px;
 }
+
+
+header{
+  .carousel-indicators {
+  display: none;
+  }
+} 
+
+header {
+  display: flex!important;
+  position: relative;
+}
+
+
