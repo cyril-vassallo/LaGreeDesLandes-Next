@@ -6,6 +6,7 @@ body {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
   font-size: 18px;
+
 }
 
 
@@ -20,4 +21,54 @@ header {
   position: relative;
 }
 
+h1, h2, h3, h4, h5, h6, p, a, span {
+	font-size: 100%;
+	font: inherit;
+}
 
+h1{
+  font-size: 0.8rem;
+}
+
+p, span{
+  font-size:0.6rem
+}
+
+@media screen and (min-width: 576px) {
+  .image2 {
+    height: 12vw;
+  }
+  h1 {
+    font-size: 1.1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  span{
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 768px) {
+
+ h1 {
+    font-size: 1.5rem;
+  }
+ p {
+    font-size: 1rem;
+  }
+  span{
+  font-size: 1rem;
+}
+}
+@media screen and (min-width: 962px) {
+
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  span{
+    font-size: 1.5rem;
+  }
+}

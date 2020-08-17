@@ -5,7 +5,8 @@
 }
 
 .container1 {
-  width: 60%;
+  display: flex;
+  width: 100%;
 }
 
 .container2 {
@@ -34,22 +35,35 @@
 }
 
 .image2 img {
-    width: 180%;
+  width: 180%;
 }
 
-@media screen and (min-width : 768px){
-  .image2{
-     height: 10vw;
+.text {
+  width: 65%;
+  text-align: center;
+  padding: 10px;
+  p {
+    display: none;
   }
 }
 
-@media screen and (min-width : 576px){
-  .image2{
-     height: 12vw;
+@media screen and (min-width: 576px) {
+  .image2 {
+    height: 14vw;
+  }
+  .text p {
+    display: block;
   }
 }
-@media screen and (min-width : 576px){
-  .image2{
-     height: 11vw;
+
+@media screen and (min-width: 768px) {
+  .image2 {
+    height: 12vw;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .image2 {
+    height: 10vw;
   }
 }
