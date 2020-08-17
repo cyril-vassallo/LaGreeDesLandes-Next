@@ -20,6 +20,9 @@
 }
 
 .image2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
   position: relative;
   width: 90%;
@@ -31,14 +34,22 @@
 }
 
 .image2 img {
-  position: absolute;
     width: 180%;
-    top: -162%;
-    right: -34%;
 }
 
-@media screen and (min-width: 768px) {
-  .image2 {
-    height: 10vw;
+@media screen and (min-width : 768px){
+  .image2{
+     height: 10vw;
+  }
+}
+
+@media screen and (min-width : 576px){
+  .image2{
+     height: 12vw;
+  }
+}
+@media screen and (min-width : 576px){
+  .image2{
+     height: 11vw;
   }
 }
