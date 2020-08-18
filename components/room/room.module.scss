@@ -41,9 +41,18 @@
 .text {
   width: 65%;
   text-align: center;
-  padding: 10px;
+
+  h2 {
+    font-size: 0.6rem;
+    margin: 0;
+  }
   p {
-    display: none;
+    margin-top: 0.2rem;
+    font-size: 0.3rem;
+    color: gray;
+  }
+  span {
+    color: gray;
   }
 }
 
@@ -51,8 +60,18 @@
   .image2 {
     height: 14vw;
   }
-  .text p {
-    display: block;
+  .text {
+    width: 65%;
+    text-align: center;
+
+    h2 {
+      font-size: 0.6rem;
+      margin-top: 0.5rem;
+    }
+    p {
+      font-size: 0.4rem;
+       margin-top: 0.5rem;
+    }
   }
 }
 
@@ -60,10 +79,39 @@
   .image2 {
     height: 12vw;
   }
+  .text {
+    width: 65%;
+    text-align: center;
+    padding:2%;
+
+    h2 {
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+    p {
+      font-size: 0.8rem;
+      margin-top: 1rem;
+
+    }
+  }
 }
 
 @media screen and (min-width: 960px) {
   .image2 {
     height: 10vw;
+  }
+  .text {
+    width: 65%;
+    text-align: center;
+
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 2rem;
+    }
+    p {
+      font-size: 1rem;
+      margin-top: 2rem;
+
+    }
   }
 }

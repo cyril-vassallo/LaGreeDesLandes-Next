@@ -2,15 +2,15 @@ import styles from "./room.module.scss";
 
 export default function Room() {
   return (
-    <article className={`container ${styles.article1}`}>
+    <article data-aos="fade-right" className={`container ${styles.article1}`}>
       <div className={styles.container1}>
         <div className={styles.image1}>
           <img src="/images/Shoot1-433-15.jpg" alt="" />
         </div>
         <div className={styles.text}>
-          <span>09:30</span>
-          <h1>UN DOUX RÉVEIL</h1>
-          <p>Quelques mots pour décrire le réveil</p>
+          <span>9:30</span>
+          <h2>UN DOUX RÉVEIL</h2>
+          <p>LAISSER LA NATURE VOUS RÉVEILLER TOUT EN DOUCEUR</p>
         </div>
       </div>
       <div className={styles.container2}>

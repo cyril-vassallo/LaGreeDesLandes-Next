@@ -3,7 +3,7 @@ import { Carousel } from "react-bootstrap";
 
 export default function Header() {
   return (
-    <header>
+    <header data-aos="fade-in">
       <Carousel>
         <Carousel.Item>
           <img
