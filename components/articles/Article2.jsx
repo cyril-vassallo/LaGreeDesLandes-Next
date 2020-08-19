@@ -2,7 +2,7 @@ import styles from "./article2.module.scss";
 
 export default function Article2() {
   return (
-    <article data-aos="" className={`container ${styles.article2}`}>
+    <article data-aos="fade-in" className={`container ${styles.article2}`}>
       <div className={styles.container1}>
         <div className={styles.text}>
           <span>11:07</span>
