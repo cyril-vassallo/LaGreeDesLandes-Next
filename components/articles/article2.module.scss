@@ -1,24 +1,25 @@
 .article2{
-
+  padding:2rem;
   margin-top: 60px;
   display: flex;
   position: relative;
 }
 
 .container1 {
+  display: flex;
   width: 100%;
-
 }
 
 .container2 {
   position: absolute;
   width: 50%;
-  left: 10%;
-  bottom: 5%;
+  left: 5%;
+  bottom: 15%;
 }
 
 .image1 {
-  width: 300%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .image2 {
@@ -28,92 +29,65 @@
   overflow: hidden;
   position: relative;
   width: 100%;
-  height: 30vw;
+  height: 18vw;
 }
 
 .image1 img {
-  width: 100%;
+  width: 150%;
 }
 
 .image2 img {
-  width: 110%;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+  width: 100%;
 }
 
 .text {
-  width: 65%;
+  height: 100%;
+  min-width: 30%;
   text-align: center;
+  padding: 2em;
 
   h2 {
-    font-size: 0.6rem;
+    font-size: 1.2em;
     margin: 0;
   }
   p {
-    margin-top: 0.2rem;
-    font-size: 0.3rem;
+    font-size: 0.8em;
+    margin-top: 0.2em;
     color: gray;
   }
   span {
+    font-size: 0.8em;
     color: gray;
   }
 }
 
 
 @media screen and (min-width: 576px) {
-  .image2 {
-    height: 14vw;
-  }
   .text {
-    width: 65%;
-    text-align: center;
-
-    h2 {
-      font-size: 0.6rem;
-      margin-top: 0.5rem;
-    }
-    p {
-      font-size: 0.4rem;
-       margin-top: 0.5rem;
-    }
+    font-size: 12px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .image2 {
-    height: 12vw;
-  }
   .text {
-    width: 65%;
-    text-align: center;
-    padding:2%;
-
-    h2 {
-      font-size: 1rem;
-      margin-top: 1rem;
-    }
-    p {
-      font-size: 0.8rem;
-      margin-top: 1rem;
-
-    }
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 960px) {
-  .image2 {
-    height: 10vw;
-  }
   .text {
-    width: 65%;
-    text-align: center;
+    font-size: 18px;
+  }
+}
 
-    h2 {
-      font-size: 1.2rem;
-      margin-top: 2rem;
-    }
-    p {
-      font-size: 1rem;
-      margin-top: 2rem;
-
-    }
+@media screen and (min-width: 1140px) {
+  .text {
+    font-size: 22px;
   }
 }

@@ -41,62 +41,44 @@
 .text {
   width: 65%;
   text-align: center;
+  padding: 1em;
+
 
   h2 {
-    margin-top: 0.2rem;
-    margin: 0;
+    font-size: 1.2em;
   }
 
   p {
-    margin-top: 0.2rem;
+    font-size: 0.8em;
     color: gray;
   }
 
   span {
+    font-size: 0.8em;
     color: gray;
   }
 }
 
 @media screen and (min-width: 576px) {
   .text {
-    h2 {
-      margin-top: 0.5rem;
-    }
-    p {
-      margin-top: 0.5rem;
-    }
+    font-size: 12px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .text {
-    h2 {
-      margin-top: 1rem;
-    }
-    p {
-      margin-top: 1rem;
-    }
+    font-size: 16px;
   }
 }
 
 @media screen and (min-width: 960px) {
   .text {
-    h2 {
-      margin-top: 1rem;
-    }
-    p {
-      margin-top: 1rem;
-    }
+    font-size: 20px;
   }
 }
 
 @media screen and (min-width: 1140px) {
   .text {
-    h2 {
-      margin-top: 1rem;
-    }
-    p {
-      margin-top: 1rem;
-    }
+    font-size: 24px;
   }
 }

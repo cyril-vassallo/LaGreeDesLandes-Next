@@ -1,7 +1,7 @@
 import Nav from "./../components/nav/Nav";
 import Header from "./../components/header/Header";
 import Article1 from "./../components/articles/Article1";
-// import Article2 from "./../components/articles/Article2";
+import Article2 from "./../components/articles/Article2";
 import AOS from "aos";
 import { useEffect } from "react";
 
@@ -20,7 +20,7 @@ export default function Home() {
         <Header/>
         <section>
           <Article1/>
-          {/* <Article2/> */}
+          <Article2/>
         </section>
       </main>
     </>   
