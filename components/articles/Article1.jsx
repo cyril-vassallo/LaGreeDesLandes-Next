@@ -1,8 +1,8 @@
-import styles from "./room.module.scss";
+import styles from "./article1.module.scss";
 
-export default function Room() {
+export default function Article1() {
   return (
-    <article data-aos="fade-right" className={`container ${styles.article1}`}>
+    <article data-aos="fade-in" className={`container ${styles.article1}`}>
       <div className={styles.container1}>
         <div className={styles.image1}>
           <img src="/images/Shoot1-433-15.jpg" alt="" />

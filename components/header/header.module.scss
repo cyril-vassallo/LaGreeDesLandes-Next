@@ -12,16 +12,16 @@
   }
   button {
     padding: 5px 10px 5px 10px;
-    background-color: #aa9c30;
-    border: 1px solid #7089b1;
-    color: #7089b1;
+    background-color: #b3a53b;
+    border: 1px solid #000000;
+    color: #000000;
     font-size: 0.5rem;
   }
 }
 
 @media screen and (min-width: 576px) {
   .layer {
-    padding: 10%;
+    padding: 9%;
 
     p {
       margin-top: 1rem;
@@ -43,6 +43,12 @@
 
 @media screen and (min-width: 920px) {
   .layer {
-    padding: 10%;
+    padding: 11%;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .layer {
+    padding: 12%;
   }
 }
