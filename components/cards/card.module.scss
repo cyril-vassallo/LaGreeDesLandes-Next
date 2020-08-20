@@ -1,7 +1,8 @@
 .cardContent {
   margin-top: 60px;
   font-size: 15px;
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
 }
 
 .offer {
@@ -29,7 +30,7 @@
   margin: 1em;
   background-color: #93a345;
   color: white;
-  padding: 0.5em 4em;
+  padding: 0.5em 3em;
   border: 0;
   box-shadow: unset;
 }

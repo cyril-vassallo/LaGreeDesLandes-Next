@@ -6,8 +6,11 @@ export default function Article2() {
       <div className={styles.container1}>
         <div className={styles.text}>
           <span>11:07</span>
-          <h2>UN DOUX RÉVEIL</h2>
-          <p>LAISSER LA NATURE VOUS RÉVEILLER TOUT EN DOUCEUR</p>
+          <h2>DETENTE.</h2>
+          <h2>RELAXATION.</h2>
+          <h2>SILENCE.</h2>
+          <p>SE RESSOURCER, SE RETROUVER...</p>
+          <p>UN RITUEL POUR SOI POUR UNE DOUCE ENTREE EN MÂTINE</p>
         </div>
         <div className={styles.image1}>
           <img src="/images/chambre22-123-15.jpg" />

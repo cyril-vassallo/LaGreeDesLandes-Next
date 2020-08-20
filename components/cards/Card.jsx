@@ -1,8 +1,21 @@
 import styles from "./card.module.scss";
 
-function Card({data}) {
+function Card({ data }) {
+  const displayDescription = () => {
+    if (typeof data.description === "object") {
+      return (
+        <ul>
+          {data.description.map((li) => {
+            return <li>{li}</li>;
+          })}
+        </ul>
+      );
+    } else {
+      return <p>{data.description}</p>;
+    }
+  };
   return (
-    <div className={`h-100 ${styles.cardContent}`}>
+    <div data-aos="fade-in" className={`h-100 ${styles.cardContent}`}>
       <div className={`container ${styles.image}`}>
         <div className="row ">
           <div className="col">
@@ -18,16 +31,16 @@ function Card({data}) {
         </div>
         <div className="row">
           <div className={`col ${styles.fixedContent}`}>
-            <p>{data.description}</p>
+            {displayDescription()}
           </div>
         </div>
         <div className="row">
           <div className="col">
-            <span>490 EUR</span>
+            <span>{data.price} EUR</span>
           </div>
           <div className="col text-right">
             <p>{data.persons} personne(s)</p>
-            <p>{data.nights} nuitée(s)</p>
+            {data.type === "stay" ? <p>{data.nights} nuitée(s)</p> : <p>-</p>}
           </div>
         </div>
         <div className="row justify-centent center">
