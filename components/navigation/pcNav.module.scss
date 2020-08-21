@@ -1,0 +1,58 @@
+@import "./../../styles/constantes.scss";
+
+
+
+.button {
+  background-color: $color-primary;
+  border: unset;
+  color: $color-text-light;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+
+.logo {
+  height: 3.7em;
+}
+
+.linkNavPc {
+  font-size: 2em;
+  height: 100%;
+  padding: 1em;
+  margin:1em ;
+  color: $color-primary;
+  text-shadow: 2px 2 2px 2px $color-text-dark;
+  text-decoration: none;
+}
+
+.linkNavPc:hover {
+  color: $color-primary;
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.activeLinkPc{
+  font-weight: bold;
+}
+
+@media screen and (min-width: 576px) {
+  .logo {
+    height: 8em;
+  }
+  .button {
+    font-size: 1.8em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 960px) {
+
+}
+
+@media screen and (min-width: 1140px) {
+
+}

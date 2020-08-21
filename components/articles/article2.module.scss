@@ -1,3 +1,6 @@
+@import "./../../styles/constantes.scss";
+
+
 .article2{
   padding:2rem;
   margin-top: 100px;
@@ -59,11 +62,11 @@
   p {
     margin:0;
     font-size: 0.7em;
-    color: gray;
+    color: $color-text-secondary;
   }
   span {
     font-size: 0.8em;
-    color: gray;
+    color: $color-text-secondary;
   }
 }
 

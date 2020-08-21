@@ -1,3 +1,5 @@
+@import "./../../styles/constantes.scss";
+
 .article1 {
   margin-top: 60px;
   display: flex;
@@ -51,12 +53,12 @@
 
   p {
     font-size: 0.7em;
-    color: gray;
+    color: $color-text-secondary;
   }
 
   span {
     font-size: 0.8em;
-    color: gray;
+    color: $color-text-secondary;
   }
 }
 
