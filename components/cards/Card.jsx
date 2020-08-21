@@ -5,8 +5,8 @@ function Card({ data }) {
     if (typeof data.description === "object") {
       return (
         <ul>
-          {data.description.map((li) => {
-            return <li>{li}</li>;
+          {data.description.map((li, key) => {
+            return <li key={key}>{li}</li>;
           })}
         </ul>
       );
@@ -15,7 +15,7 @@ function Card({ data }) {
     }
   };
   return (
-    <div data-aos="fade-in" className={`${styles.cardContent}`}>
+    <div data-aos="flip-left" className={`${styles.cardContent}`}>
       <div className={`container ${styles.image}`}>
         <div className="row ">
           <div className="col">
@@ -40,7 +40,7 @@ function Card({ data }) {
           </div>
           <div className="col text-right">
             <p>{data.persons} personne(s)</p>
-            {data.type === "stay" ? <p>{data.nights} nuitée(s)</p> : <p>-</p>}
+            {data.type === "stay" ? <p>{data.nights} nuitée(s)</p> : <p style={{visibility:'hidden'}}>-</p>}
           </div>
         </div>
         <div className="row justify-centent center">

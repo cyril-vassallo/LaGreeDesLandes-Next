@@ -3,6 +3,7 @@ import Header from "./../components/header/Header";
 import Article1 from "./../components/articles/Article1";
 import Article2 from "./../components/articles/Article2";
 import Cards from "./../components/cards/Cards";
+import Footer from "./../components/footer/footer";
 
 export default function Home() {
 
@@ -19,6 +20,7 @@ export default function Home() {
         <section>
           <Cards />
         </section>
+        <Footer/>
       </main>
     </>
   );

@@ -1,52 +1,70 @@
 .navigation {
-   margin: 10px;
-   font-size: 10px;
+  margin: 10px;
+  font-size: 10px;
 }
 
 .button {
-    background-color: #93a446;
-    border: unset;
-    color: white;
-    padding: 10px;
-    font-weight: 500;
-    font-size: 1em;
+  background-color: #93a446;
+  border: unset;
+  color: white;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 1em;
 }
 
-.burger{    
-    width: 25px;
+.burger {
+  width: 25px;
 }
 
-.logo{
-    height: 5em;
+.logo {
+  height: 3.7em;
 }
 
-.link{
+.link {
   padding: 25px;
   font-size: 1.6em;
   text-decoration: unset;
-  color: #8B9620;
+  color: #8b9620;
   text-shadow: 2px 2 2px 2px black;
   text-decoration: none;
 }
 
-.link:hover{
-    text-decoration: none;
-    color: #6b750f;
-    font-weight: 600;
-
+.link:hover {
+  text-decoration: none;
+  color: #6b750f;
+  font-weight: 600;
 }
-  
+
+.menu {
+  padding: 1em;
+  font-size: 15px;
+  p {
+    font-size: 1em;
+    text-align: center;
+  }
+  p:hover {
+    font-weight: 600;
+  }
+}
+
+.activeButton {
+  padding: 1em;
+  background-color: #8b9620;
+  color: white;
+  border-radius: 2px;
+  font-weight: 600;
+}
 
 @media screen and (min-width: 576px) {
   .navigation {
     font-size: 12px;
   }
-  .logo{
+  .logo {
     height: 8em;
-}
-.button{
-  font-size: 1.5em;
-}
+  }
+  .button {
+    font-size: 1.5em;
+  }
 }
 
 @media screen and (min-width: 768px) {

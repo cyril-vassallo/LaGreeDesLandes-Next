@@ -48,9 +48,9 @@ function Cards() {
     return (
       <div className="container">
         <div className="row">
-          {cards.map((card) => {
+          {cards.map((card, key) => {
             return (
-              <div className={`col ${styles.cardsParent}`}>
+              <div key={key} className={`col ${styles.cardsParent}`}>
                 <Card data={card} />
               </div>
             );
