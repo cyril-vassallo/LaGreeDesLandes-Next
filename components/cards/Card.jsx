@@ -15,7 +15,7 @@ function Card({ data }) {
     }
   };
   return (
-    <div data-aos="fade-in" className={`h-100 ${styles.cardContent}`}>
+    <div data-aos="fade-in" className={`${styles.cardContent}`}>
       <div className={`container ${styles.image}`}>
         <div className="row ">
           <div className="col">
@@ -26,7 +26,7 @@ function Card({ data }) {
       <div className={`container ${styles.offer}`}>
         <div className="row">
           <div className={`col ${styles.fixedContent}`}>
-            <h2>{data.title}</h2>
+            <h2>{data.title.toUpperCase()}</h2>
           </div>
         </div>
         <div className="row">
