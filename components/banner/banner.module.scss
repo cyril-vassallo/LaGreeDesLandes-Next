@@ -1,0 +1,9 @@
+@import "./../../styles/constantes.scss";
+
+.title{
+  padding: 4vw;
+  text-shadow: 2px 2px 2px $color-shadow;
+  color: $color-text-third;
+  text-align: center;
+  font-size:8vw;
+}

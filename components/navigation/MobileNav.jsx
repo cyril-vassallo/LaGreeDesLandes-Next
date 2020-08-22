@@ -35,7 +35,7 @@ export default function MobileNav({ navigation, changeNavState }) {
     <>
       <nav className="container-fluid navigation my-1">
         <div className="row">
-          <div className="col d-flex align-items-center">
+          <div className="col d-flex align-items-start">
             <button
               onClick={handleClickMobileButton}
               className={`hamburger`}
@@ -46,10 +46,10 @@ export default function MobileNav({ navigation, changeNavState }) {
               </span>
             </button>
           </div>
-          <div className="col d-flex  align-items-center justify-content-center">
-            <img className={styles.logo} src="/images/logo.png" />
+          <div className="col d-flex align-items-center justify-content-center">
+            <img className={styles.logoYR} src="/images/logo.png" />
           </div>
-          <div className="col d-flex  align-items-center justify-content-end mr-3">
+          <div className="col d-flex align-items-center justify-content-end mr-3">
             <button className={styles.button} type="button">
               RESERVER
             </button>
@@ -68,7 +68,7 @@ export default function MobileNav({ navigation, changeNavState }) {
                       className={styles.activeLinkMobile}
                     >
                       <Link href={link.path}>
-                        <a index={key}>~ {link.title}~</a>
+                        <a index={key}>~ {link.title} ~</a>
                       </Link>
                     </p>
                   );

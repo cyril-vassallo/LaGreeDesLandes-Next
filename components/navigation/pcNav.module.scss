@@ -1,7 +1,5 @@
 @import "./../../styles/constantes.scss";
 
-
-
 .button {
   background-color: $color-primary;
   border: unset;
@@ -9,11 +7,6 @@
   padding: 10px;
   font-weight: 500;
   font-size: 1em;
-}
-
-
-.logo {
-  height: 3.7em;
 }
 
 .linkNavPc {
@@ -37,13 +30,15 @@
   font-weight: bold;
 }
 
+
+
 @media screen and (min-width: 576px) {
-  .logo {
-    height: 8em;
-  }
   .button {
     font-size: 1.8em;
   }
+  .logoYR{
+  width: 25rem;
+}
 }
 
 @media screen and (min-width: 768px) {
