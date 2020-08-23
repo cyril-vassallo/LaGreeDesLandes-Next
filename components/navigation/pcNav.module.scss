@@ -1,6 +1,7 @@
 @import "./../../styles/constantes.scss";
 
 .button {
+  font-family: Brandon_medium ;
   background-color: $color-primary;
   border: unset;
   color: $color-text-light;
@@ -27,6 +28,7 @@
 }
 
 .activeLinkPc{
+  font-family: Didotlh-roman ;
   font-weight: bold;
 }
 

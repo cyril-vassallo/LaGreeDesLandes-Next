@@ -18,7 +18,7 @@ export default function Home() {
           <Article2 />
         </section>
         <section>
-          <Cards />
+          <Cards source="data-home"/>
         </section>
         <Footer/>
       </main>

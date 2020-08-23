@@ -6,9 +6,9 @@ export default function Navigation() {
   const [isMobile, setIsMobile] = useState(true);
   const [navigation, setNavigation] = useState([
     { title: "Accueil", path: "/", state: true },
-    { title: "Nos services", path: "/services", state: false },
-    { title: "Nos produits", path: "/", state: false },
-    { title: "À propos d'Yves Rocher", path: "/", state: false },
+    { title: "Nos offres", path: "/offer", state: false },
+    { title: "À propos d'Yves Rocher", path: "/yves-rocher", state: false },
+    { title: "Nous contacter", path: "/contact", state: false },
   ]);
 
   useEffect(() => {
