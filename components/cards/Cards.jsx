@@ -21,9 +21,7 @@ class Cards extends Component {
   };
 
   fetchSuccess = (data) => {
-    const copyState = { ...this.state };
-    copyState.data = data;
-    this.setState(copyState);
+    this.setState({...this.state, data });
     console.log("in success", this.state.data.cards);
   };
 
