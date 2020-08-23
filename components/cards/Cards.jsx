@@ -1,39 +1,41 @@
 import Card from "./Card";
-import AOS from "aos";
-import { useEffect, useState } from "react";
+import React, { Component } from "react";
 import styles from "./cards.module.scss";
 import FetchData from "./../../services/FetchData";
 
-function Cards() {
-  const fetchData = new FetchData();
-  const [cards, setCards] = useState([]);
-  const [dataLoaded, setDataLoaded] = useState(false);
+class Cards extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: null
+    };
+  }
 
-  useEffect(() => {
-    fetchCards();
-    // AOS.init({ duration: 2000 });
-  },[cards]);
-
-  const fetchCards = async () => {
+  componentDidMount = async () => {
+    const fetchData = new FetchData();
     try {
-    await fetchData.getData( (data)=> {
-        console.log("toto", data);
-        console.log(data);
-        if (cards === []) {
-          setCards(data);
-        }
-        console.log("cards: ", cards);
-        
-      },"data-home")
-    } catch (e) {
-      console.log(e);
+      await fetchData.getData(this.fetchSuccess, "data-home");
+    } catch (error) {
+      this.fetchFailed(error);
     }
   };
 
-  return (
-    <div className="container">
-      {/* <div className="row">
-          {cards.map((card, key) => {
+  fetchSuccess = (data) => {
+    const copyState = { ...this.state };
+    copyState.data = data;
+    this.setState(copyState);
+    console.log("in success", this.state.data.cards);
+  };
+
+  fetchFailed = (error) => {
+    console.log(error);
+  };
+
+  render() {
+    return (
+      <div className="container">
+        {/* <div className="row">
+          {this.state.data.cards.map((card, key) => {
             return (
               <div key={key} className={`col ${styles.cardsParent}`}>
                 <Card data={card} />
@@ -41,8 +43,9 @@ function Cards() {
             );
           })}
         </div> */}
-    </div>
-  );
+      </div>
+    );
+  }
 }
 
 export default Cards;

@@ -4,9 +4,14 @@ import Article1 from "./../components/articles/Article1";
 import Article2 from "./../components/articles/Article2";
 import Cards from "./../components/cards/Cards";
 import Footer from "./../components/footer/footer";
+import AOS from "aos";
+import {useEffect} from 'react';
 
 export default function Home() {
 
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  });
 
   return (
     <>

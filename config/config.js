@@ -11,10 +11,10 @@ if (typeof window !== "undefined") {
 }
 
 const Config = {
-  APP: {
+  app: {
     DOMAINE: domaine,
   },
-  API: {
+  api: {
     // all external api parameters
   },
 };

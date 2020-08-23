@@ -2,13 +2,22 @@ import styles from "./article2.module.scss";
 
 export default function Article2() {
   return (
-    <article data-aos="fade-in" className={`container ${styles.article2}`}>
+    <article data-aos="fade-in" className={`container ${styles.article}`}>
       <div className={styles.container1}>
         <div className={styles.text}>
           <span>11:07</span>
-          <h2>DÉTENTE.<br/>RELAXATION.<br/>SILENCE.</h2>
-          <p>SE RESSOURCER, SE RETROUVER...</p>
-          <p>UN RITUEL POUR SOI POUR UNE DOUCE ENTRÉE EN MÂTINE</p>
+          <h2>
+            DÉTENTE.
+            <br />
+            RELAXATION.
+            <br />
+            SILENCE.
+          </h2>
+          <p>
+            SE RESSOURCER, SE RETROUVER...
+            <br />
+            UN RITUEL POUR SOI POUR UNE DOUCE ENTRÉE EN MÂTINE
+          </p>
         </div>
         <div className={styles.image1}>
           <img src="/images/chambre22-123-15.jpg" />
