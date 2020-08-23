@@ -6,8 +6,8 @@ import Config from "../config/config";
  */
 class FetchData {
   getData = (fetchSuccess , fileName = "data-home") => {
-    // let query = `${Config.app.DOMAINE}data/${fileName}.json`;
-    let query = `http://localhost:3000/data/${fileName}.json`;
+    let query = `${Config.app.DOMAINE}data/${fileName}.json`;
+    // let query = `http://localhost:3000/data/${fileName}.json`;
     return fetch(query)
       .then((response) => {
         console.log(response);

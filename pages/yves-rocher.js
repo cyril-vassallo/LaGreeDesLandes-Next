@@ -5,20 +5,20 @@ import Spacer from "../components/spacers/BodySpacer";
 import Article1 from "../components/articles/Article1";
 
 export default function Offer() {
-
-
   return (
     <>
       <Nav />
       <main>
-        <Banner
-          title="Yves Rocher"
-          titleStyle="fade-down"
-          background="header.jpg"
-          titleColor="#8b9620"
-        />
-        <Spacer space="100px"/>
-        <Article1/>
+        <header>
+          <Banner
+            title="Yves Rocher"
+            titleStyle="fade-down"
+            background="header.jpg"
+            titleColor="#8b9620"
+          />
+        </header>
+        <Spacer space="100px" />
+        <Article1 />
         <Footer />
       </main>
     </>

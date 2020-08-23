@@ -1,13 +1,12 @@
 @import "./../../styles/constantes.scss";
 
-
 .navigation {
   margin: 10px;
+  position: sticky;
 }
 
-
 .button {
-  font-family: Brandon_medium ;
+  font-family: Brandon_medium;
   background-color: $color-primary;
   border: unset;
   color: $color-text-light;
@@ -16,48 +15,49 @@
   font-size: 1em;
 }
 
-.logoYR{
-  width: 8rem;
+.logoYR {
+  display: none;
+}
+
+.singleLogoYR {
+  margin:25px 0;
+  width: 20rem;
 }
 
 .menu {
   padding: 1em;
   font-size: 15px;
   text-align: center;
+  position: absolute;
+  top:70px;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index:45;
+  width: 100%;
   p {
+    font-family:Brandon_medium;
     font-size: 2em;
     text-align: center;
-          z-index:10;
+    z-index: 10;
+    font-weight: bolder;
     a {
-      text-decoration: none;
       color: $color-primary;
-
+      text-decoration: none;
     }
   }
   p:hover {
-    border-radius: 5px;
-    font-weight: 600;
+    color: $color-primary;
   }
 }
 
 
-.activeLinkMobile {
-    font-family: Didotlh-roman ;
-    border-left: 8px double $color-primary;
-    border-right: 8px double $color-primary;
-    border-radius: 5px;
-    font-weight: 400;
-
-}
-
-
-
-
-
 @media screen and (min-width: 380px) {
- .logoYR {
-   width: 8rem;
- }
+  .logoYR {
+    width: 13rem;
+    display: block;
+  }
+  .singleLogoYR{
+    display: none;
+  }
 }
 
 @media screen and (min-width: 576px) {

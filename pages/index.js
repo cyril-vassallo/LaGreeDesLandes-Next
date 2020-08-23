@@ -1,15 +1,14 @@
 import Nav from "../components/navigation/Navigation";
-import Header from "./../components/header/Header";
+import Carousel from "../components/carousels/HeaderCarousel";
 import Article1 from "./../components/articles/Article1";
 import Article2 from "./../components/articles/Article2";
 import Cards from "./../components/cards/Cards";
 import Footer from "./../components/footer/footer";
-import Spacer from "./../components/spacers/BodySpacer"
+import Spacer from "./../components/spacers/BodySpacer";
 import AOS from "aos";
-import {useEffect} from 'react';
+import { useEffect } from "react";
 
 export default function Home() {
-
   useEffect(() => {
     AOS.init({ duration: 2000 });
   });
@@ -18,18 +17,19 @@ export default function Home() {
     <>
       <Nav />
       <main>
-        <Header/>
+        <header>
+          <Carousel />
+        </header>
         <section>
-          <Spacer space= "100px"/>
           <Article1 />
-          <Spacer space= "100px"/>
+          <Spacer space="100px" />
           <Article2 />
-          <Spacer space= "100px"/>
+          <Spacer space="100px" />
         </section>
         <section>
-          <Cards source="data-home"/>
+          <Cards source="data-home" />
         </section>
-        <Footer/>
+        <Footer />
       </main>
     </>
   );

@@ -11,6 +11,7 @@
 }
 
 .linkNavPc {
+  font-family:Brandon_medium;
   font-size: 2em;
   height: 100%;
   padding: 1em;
@@ -18,20 +19,14 @@
   color: $color-primary;
   text-shadow: 2px 2 2px 2px $color-text-dark;
   text-decoration: none;
+  font-weight: bolder;
 }
 
 .linkNavPc:hover {
-  color: $color-primary;
+  color: $color-text-third;
   font-size: 2em;
   text-decoration: none;
-  font-weight: 600;
 }
-
-.activeLinkPc{
-  font-family: Didotlh-roman ;
-  font-weight: bold;
-}
-
 
 
 @media screen and (min-width: 576px) {

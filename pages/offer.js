@@ -5,18 +5,18 @@ import Cards from "../components/cards/Cards";
 import BodySpacer from "../components/spacers/BodySpacer";
 
 export default function Offer() {
-
-
   return (
     <>
       <Nav />
       <main>
-        <Banner
-          title="Nos séjours de rêves"
-          titleStyle="fade-down"
-          background="header.jpg"
-          titleColor="#8b9620"
-        />
+        <header>
+          <Banner
+            title="Nos séjours de rêves"
+            titleStyle="fade-down"
+            background="header.jpg"
+            titleColor="#8b9620"
+          />
+        </header>
         <Cards />
         <Cards />
         <BodySpacer space="20vh" />
